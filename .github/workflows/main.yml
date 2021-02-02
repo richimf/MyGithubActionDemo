@@ -7,11 +7,12 @@ jobs:
     steps:
       - name: Hello world actions steps
         id: hello
-        uses: richimf/MyGithubActionDemo@v2
+        uses: richimf/MyGithubActionDemo@v3
         with:
-          who-to-greet: "Richie gracias"
+          #who-to-greet: "Richie gracias"
+          title-regex: '^(?:\[IMPROVEMENT\]|\[FEATURE\]|\[BUGFIX\])\[([A-Z])+\-(\d+)\]\s(\w){1,}(\w|\s|\-){1,}$'
       # Use the output from the 'hello' step
       - name: Get the output time
-        run: echo "The time was $${{ steps.hello.outputs.time }}"
+        run: echo "OUTPUT: $${{ steps.hello.outputs.time }}"
 
 
