@@ -8,7 +8,7 @@ inputs:
     required: true
     default: '^\[PROJECT-\d*\]\ '
 outputs:
-  time: #id of output
+  message: #id of output
     description: 'the time we greeted you'
 runs:
   using: 'node12'
