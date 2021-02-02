@@ -2,7 +2,7 @@
 
 name: 'Hello World action'
 description: 'Saludar ya'
-inputs:
+input:
   title-regext: #id of input
     description: 'regex input'
     required: true
