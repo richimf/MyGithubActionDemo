@@ -16,7 +16,7 @@ jobs:
         uses: richimf/MyGithubActionDemo@v15
         with:
           title-regex: '^(?:\[IMPROVEMENT\]|\[FEATURE\]|\[BUGFIX\])\[([A-Z])+\-(\d+)\]\s(\w){1,}(\w|\s|\-){1,}$'
-          errorMessage: 'no se sigue formato de regex' 
+          error-message: 'no se sigue formato de regex' 
       # Use the output from the 'hello' step
       - name: Get the output
         run: echo "OUTPUT $${{ steps.hello.outputs.message }}"
