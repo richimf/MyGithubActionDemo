@@ -7,6 +7,10 @@ inputs:
     description: 'Title regex to match'
     required: true
     default: '^\[PROJECT-\d*\]\ '
+  error-message:
+    description: 'Description message as input'
+    required: true
+    default: '^\[PROJECT-\d*\]\ '
 outputs:
   message: #id of output
     description: 'output message'
