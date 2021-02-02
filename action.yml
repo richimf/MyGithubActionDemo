@@ -2,11 +2,11 @@
 
 name: 'Hello World action'
 description: 'Saludar ya'
-input:
-  title-regext: #id of input
-    description: 'regex input'
+inputs:
+  title-regex:
+    description: 'Title regex to match'
     required: true
-    defuault: 'World'
+    default: '^\[PROJECT-\d*\]\ '
 outputs:
   time: #id of output
     description: 'the time we greeted you'
