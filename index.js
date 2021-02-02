@@ -4,7 +4,7 @@ const github = require('@actions/github')
 
 try {
     // const regex = core.getInput('title-regex');
-    const regex = core.getInput('title-regex', {required: true}),  
+    const regex = core.getInput('title-regex', {required: true});  
     const regexFlags = core.getInput('title-regex-flags') || 'g';
     const title = github.context.eventName;
 
