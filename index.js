@@ -7,6 +7,8 @@ try {
     const regex = core.getInput('title-regex', {required: true});  
     const regexFlags = core.getInput('title-regex-flags') || 'g';
     const title = github.context.eventName;
+    console.log(`title is ${title}`);
+
 
     if (!title.match(new RegExp(regex, regexFlags))) {
       core.setFailed("No funciona");
