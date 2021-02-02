@@ -3,8 +3,8 @@
 name: 'Hello World action'
 description: 'Saludar ya'
 inputs:
-  who-to-greet: #id of input
-    description: 'who to greet'
+  title-regext: #id of input
+    description: 'regex input'
     required: true
     defuault: 'World'
 outputs:
