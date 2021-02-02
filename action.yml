@@ -1,7 +1,7 @@
 # My action
 
-name: 'Hello World action'
-description: 'Saludar ya'
+name: 'Pull request title Validator'
+description: 'This github action validates pull requests title with regex'
 inputs:
   title-regex:
     description: 'Title regex to match'
@@ -9,7 +9,7 @@ inputs:
     default: '^\[PROJECT-\d*\]\ '
 outputs:
   message: #id of output
-    description: 'the time we greeted you'
+    description: 'output message'
 runs:
   using: 'node12'
   main: 'index.js'
