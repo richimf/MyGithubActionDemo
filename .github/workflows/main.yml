@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Hello world actions steps
         id: hello
-        uses: richimf/MyGithubActionDemo@v5
+        uses: richimf/MyGithubActionDemo@v6
         with:
           #who-to-greet: "Richie gracias"
           title-regex: '^(?:\[IMPROVEMENT\]|\[FEATURE\]|\[BUGFIX\])\[([A-Z])+\-(\d+)\]\s(\w){1,}(\w|\s|\-){1,}$'
