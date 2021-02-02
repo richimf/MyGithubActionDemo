@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Hello world actions steps
         id: hello
-        uses: richimf/MyGithubActionDemo@v6
+        uses: richimf/MyGithubActionDemo@v7
         with:
           title-regex: '^(?:\[IMPROVEMENT\]|\[FEATURE\]|\[BUGFIX\])\[([A-Z])+\-(\d+)\]\s(\w){1,}(\w|\s|\-){1,}$'
       # Use the output from the 'hello' step
